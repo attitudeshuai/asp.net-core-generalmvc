@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "列表";
+}
+@using General.Domian.Entity;
+
+<style>
+    span {
+        margin-left:15px;
+    }
+    
+</style>
+<div>
+    <a href="/admin/person/Create">新增</a>
+    <ul>
+        @foreach (var person in Model)
+        {
+            <li>
+                <span>Id:@person.Id</span>
+                <span>Name:@person.Name</span>
+                <span>Age:@person.Age</span>
+                <span>
+                    <a href="/admin/person/Update/@person.Id">修改</a>
+                    <a href="/admin/person/Delete/@person.Id">删除</a>
+                </span>
+                <hr />
+            </li>
+        }
+    </ul>
+</div>
+

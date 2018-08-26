@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "修改";
+}
+@using General.Domian.Dto;
+<style>
+    /*table {
+         border-collapse: collapse;
+     }*/
+    table tr td {
+        /*border: 1px solid #000000;*/
+        height: 45px;
+    }
+
+    input {
+        height: 35px;
+    }
+</style>
+<form action="/Admin/person/Update" method="post">
+    <table>
+        <tr>
+            <td>Id：</td>
+            <td><input type="text" name="Id" value="@Model.Id" style="width:300px;" readonly="readonly"/></td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" name="Name" value="@Model.Name" style="width:300px;"/></td>
+        </tr>
+        <tr>
+            <td>年龄：</td>
+            <td><input type="text" name="Age" value="@Model.Age" style="width:300px;"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="修改" style="width:300px;"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
