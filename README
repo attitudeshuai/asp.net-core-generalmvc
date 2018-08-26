@@ -1,0 +1,28 @@
+##Asp.net core 
+
+### Describle
+此项目为asp.net core的一个基础系统构架。
+
+###Bussiness：服务层
+>IServices抽象类 
+
+>IServices实现类 
+###Core：核心层
+>IRepository仓储模式接口
+>
+>IUnitOfWorK工作单元模式接口
+>
+>系统其他的通用方法操作类库
+###Domian：数据领域（实体）层
+>DTO、EO
+> IRepository仓储模式的实现
+> 
+>IUnitOfWorK工作单元模式的实现
+###Web：表现（UI）层
+>Framework UI框架层
+>>MVC的基础设施建设
+
+>Web UI层
+>>用户交互（界面）层
+ 
+
